@@ -1,1 +1,1 @@
-# saza-gym
+This project is about a gym company called SaZa, it is made with 6 pages and these are Home, Services, Staff, Testimonial, and FAQ. This is our second assignment in the course web development. Team members Saki and Zalpa.
