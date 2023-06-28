@@ -1,3 +1,5 @@
+/* mobile */
+/* contactform */
 .bodysaki {
     background-color: whitesmoke;
     color: black;
@@ -20,32 +22,34 @@
     align-items: center;
 }
 
-.contacts {
-    display: flex;
-    align-items: right;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    border: 3px solid black;
-    padding: 10px;
-    display: inline-block;
-    font-weight: bold;
-    margin-left: 200px;
-}
-
 #contactform {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 30%;
+    width: 80%;
 }
 
 .button {
     width: fit-content;
 }
 
+.button:hover{
+    color: blue; 
+    background-color: #c9c9c9; 
+}
+
 img {
-    width: 400px;
+    width: 80%;
+}
+
+.bodysakistaff img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.bodysaki img:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .mailaddress {
@@ -78,7 +82,7 @@ img {
 .peter p,
 .anna p,
 .annie p {
-    width: 50%;
+    width: 90%;
     margin-bottom: 30px;
 }
 
@@ -118,23 +122,189 @@ img {
     margin-left: 20px;
 }
 
-.bodytraining {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-}
-
+/* services page */
 .bodytraining img {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    height: auto;
+} 
 
 .bodytraining p {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .servicetitle {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
+}
+
+.bodytraining {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .bodytraining img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+
+/* tablet */
+@media screen and (min-width:768px) {
+    /* contact page */
+    #contactform {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 80%;
+    }
+
+    /* staff page */
+    .john p,
+    .peter p,
+    .anna p,
+    .annie p {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:1024px) {
+    .bodysaki {
+        background-color: whitesmoke;
+        color: black;
+        background-image: url("../img/backgroundsaki1.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7vh;
+        min-height: 90vh;
+        
+    }
+    
+    .bodysakistaff {
+        padding-top: 7vh;
+        background-color: whitesmoke;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contactform {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 30%;
+    }
+    
+    .button {
+        width: fit-content;
+    }
+    
+    img {
+        width: 400px;
+    }
+    
+    .mailaddress {
+        padding: 10px 100px;
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 200px;
+        margin-top: 5px;
+    }
+    
+    .content {
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        height: 100px;
+        resize: none;
+    }
+    
+    .john,
+    .peter,
+    .anna,
+    .annie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .john p,
+    .peter p,
+    .anna p,
+    .annie p {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .john {
+        background-image: url("../img/backgroundstaff.jpg");
+        background-size: cover;
+    }
+    
+    .peter {
+        background-image: url("../img/backgroundstaff1.jpg");
+        background-size: cover;
+    }
+    
+    .anna {
+        background-image: url("../img/backgroundstaff.jpg");
+        background-size: cover;
+    }
+    
+    .annie {
+        background-image: url("../img/backgroundstaff1.jpg");
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .contactlove {
+        color: red;
+    }
+    
+    .contacttitle {
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 100px;
+        display: flex;
+    }
+    
+    .contactinformation {
+        margin-left: 20px;
+    }
+    
+    .bodytraining {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        text-align: left;
+    }
+    
+    .bodytraining img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .bodytraining p {
+        margin-top: 30px;
+    }
+    
+    .servicetitle {
+        margin-top: 30px;
+        text-align: center;
+    }
+
 }
