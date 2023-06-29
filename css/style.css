@@ -11,13 +11,13 @@ body {
 
 /* --------------Style for Navbar and menu---------------*/
 nav {
-    height: 7vh;
     box-shadow: 0 1px 5px black;
     font-size: large;
     font-weight: bold;
     color: aliceblue;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 
 a {
@@ -58,6 +58,11 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
 }
 
 @media only screen and (min-width:1024px) {
@@ -124,9 +129,10 @@ footer li {
 
 /* --------------Style for INDEX sec ---------------*/
 .banner {
-    height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    grid-area: 1/1/ 1 / span 3;
+    position: relative;
+    padding-top: 50px;
 }
 
 .banner img {
@@ -138,7 +144,7 @@ footer li {
     left: 5%;
     top: 25%;
     z-index: 10;
-    font-size: 2rem;
+    font-size: 2vw;
     width: 40%;
 }
 
@@ -148,7 +154,7 @@ footer li {
 
 .text2 {
     overflow: hidden;
-    font-size: 3rem;
+    font-size: 3vw;
     color: #00bcd4;
 }
 
@@ -158,7 +164,7 @@ footer li {
 
 .text4 {
     overflow: hidden;
-    font-size: 3rem;
+    font-size: 3vw;
     color: #de13c0;
 }
 
@@ -427,6 +433,12 @@ footer li {
         grid-template-areas:
             'img1 description1'
             'description2 img2';
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .banner {
+        padding-top: 0;
     }
 }
 
